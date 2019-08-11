@@ -1,4 +1,4 @@
-# fecho
+# fecho [![Build Status](https://travis-ci.com/thehappydinoa/fecho.svg?branch=master)](https://travis-ci.com/thehappydinoa/fecho)
 
 Uses Facebook's debugging tool to bypass CAPTCHA and other blacklists.
 
