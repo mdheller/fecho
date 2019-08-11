@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='fecho',
-    version='1.0.2',
+    version='1.0.4',
     packages=['fecho'],
     url='https://github.com/thehappydinoa/fecho',
     license='MIT',

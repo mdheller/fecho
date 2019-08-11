@@ -1,12 +1,6 @@
 import argparse
 
 from .client import Client
-from .utils import decode_html
-
-try:
-    from HTMLParser import HTMLParser
-except ImportError:
-    from html.parser import HTMLParser
 
 
 def main():
@@ -20,8 +14,7 @@ def main():
     client = Client(args.cookie)
     response = client.get(args.url)
 
-    html_parser = HTMLParser()
-    print(html_parser.unescape(response.text))
+    print(client.unescape(response.text))
 
 
 if __name__ == "__main__":
