@@ -1,0 +1,10 @@
+.DS_Store
+.env
+*.pyc
+*.log
+*.json
+*.egg-info
+build/
+dist/
+venv/
+.idea/
