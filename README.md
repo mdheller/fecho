@@ -1,4 +1,4 @@
-# fecho [![Build Status](https://travis-ci.com/thehappydinoa/fecho.svg?branch=master)](https://travis-ci.com/thehappydinoa/fecho)
+# fecho ![PyPI](https://img.shields.io/pypi/v/fecho) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/fecho?color=orange) [![Build Status](https://travis-ci.com/thehappydinoa/fecho.svg?branch=master)](https://travis-ci.com/thehappydinoa/fecho) [![PyPI - License](https://img.shields.io/pypi/l/fecho)](https://github.com/thehappydinoa/fecho/tree/master/LICENSE)
 
 Uses Facebook's debugging tool to bypass CAPTCHA and other blacklists.
 
