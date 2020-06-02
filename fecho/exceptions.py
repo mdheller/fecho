@@ -9,5 +9,6 @@ class InvalidCookie(FechoException):
 class InvalidURL(FechoException):
     pass
 
+
 class ReturnedNoData(FechoException):
     pass

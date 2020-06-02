@@ -1,13 +1,9 @@
 import json
 
 import requests
+from six.moves.html_parser import HTMLParser
 
-from .exceptions import InvalidCookie, InvalidURL
-
-try:
-    from HTMLParser import HTMLParser
-except ImportError:
-    from html.parser import HTMLParser
+from .exceptions import InvalidCookie, InvalidURL, ReturnedNoData
 
 IMPORTANT_COOKIES = [
     "c_user",
@@ -21,7 +17,9 @@ IMPORTANT_COOKIES = [
 def format_cookie(cookie_dough):
     """editthiscookie import"""
     try:
-        cookie = json.loads(cookie_dough)
+        cookie = cookie_dough
+        if isinstance(cookie_dough, str):
+            cookie = json.loads(cookie_dough)
         simple_cookie = [c.get("name") + "=" + c.get("value")
                          for c in cookie if c.get("name") in IMPORTANT_COOKIES]
         return "; ".join(simple_cookie)
