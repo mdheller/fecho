@@ -12,7 +12,7 @@ URL = 'https://github.com/thehappydinoa/fecho'
 EMAIL = 'thehappydinoa@gmail.com'
 AUTHOR = 'Aidan Holland'
 REQUIRES_PYTHON = '>=2.7.0'
-VERSION = '1.0.5'
+VERSION = '1.0.6'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -114,9 +114,8 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: Implementation :: PyPy'
     ],
     # $ setup.py publish support.

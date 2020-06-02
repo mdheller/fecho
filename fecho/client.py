@@ -17,9 +17,7 @@ IMPORTANT_COOKIES = [
 def format_cookie(cookie_dough):
     """editthiscookie import"""
     try:
-        cookie = cookie_dough
-        if isinstance(cookie_dough, str):
-            cookie = json.loads(cookie_dough)
+        cookie = json.loads(cookie_dough)
         simple_cookie = [c.get("name") + "=" + c.get("value")
                          for c in cookie if c.get("name") in IMPORTANT_COOKIES]
         return "; ".join(simple_cookie)
